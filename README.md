@@ -20,7 +20,6 @@ Este es el código fuente de mi portafolio personal como desarrollador frontend.
 ## Tecnologías Utilizadas
 - **HTML5**
 - **CSS3**
-- **JavaScript**
 
 ---
 
