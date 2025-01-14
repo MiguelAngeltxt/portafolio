@@ -4,8 +4,15 @@
   align-items: center;
 }
 
-.section__title {
+.section__title--skills {
   margin: 16px 0 32px;
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25.83px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
 .cards {
@@ -36,4 +43,29 @@
   text-decoration-skip-ink: none;
   margin-top: 8px;
   margin-left: 16px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .section--skills {
+    gap: 32px;
+    padding: 32px;
+  }
+
+  .section__title--skills {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section--skills {
+    width: 35%;
+    gap: 32px;
+    padding: 32px;
+  }
+
+  .section__title--skills {
+    margin: 0;
+    font-size: 32px;
+    line-height: 37.57px;
+  }
 }

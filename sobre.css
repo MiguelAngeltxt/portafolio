@@ -1,13 +1,16 @@
 .section--about-me {
   background-color: #eaf2fd;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
   padding: 16px;
   margin-top: 16px;
 }
 
-.section__title {
+.section__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section__title--about-me {
   font-family: Raleway;
   font-size: 22px;
   font-weight: 700;
@@ -25,4 +28,37 @@
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .section--about-me {
+    margin: 0;
+  }
+
+  .section__title--about-me {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section--about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px;
+  }
+  .section__content {
+    width: 79%;
+  }
+
+  .section__title--about-me {
+    font-size: 32px;
+    line-height: 37.57px;
+  }
+
+  .section__text {
+    width: 68%;
+    font-size: 16px;
+    line-height: 18.78px;
+  }
 }

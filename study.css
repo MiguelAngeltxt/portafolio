@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 32px;
+  padding: 32px;
 }
 .study__title {
   font-family: Raleway;
@@ -13,25 +14,24 @@
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  margin-top: 32px;
+}
+
+.study__items {
+  width: 82%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
 .study__item {
-  width: 82%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.study__item--first {
-  margin-top: 16px;
-}
-
-.study__item--second {
-  margin-bottom: 32px;
-}
 .study__image-container {
-  max-width: 100%;
   background-color: #fff;
   height: 118px;
   display: flex;
@@ -66,4 +66,59 @@
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .study__items {
+    width: 92%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .study {
+    width: 100%;
+    padding: 82px;
+  }
+
+  .study__title {
+    font-size: 32px;
+    line-height: 37.57px;
+  }
+
+  .study__items {
+    width: 79%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 32px;
+  }
+
+  .study__item {
+    width: 38%;
+  }
+
+  .study__image-container {
+    height: 347px;
+  }
+
+  .study__image--alura {
+    width: 50%;
+  }
+
+  .study__image--tripleten {
+    width: 66%;
+  }
+
+  .study__subtitle {
+    font-size: 22px;
+    line-height: 25.83px;
+  }
+  .study__text {
+    font-size: 16px;
+    line-height: 18.78px;
+  }
 }
