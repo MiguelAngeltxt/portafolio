@@ -110,8 +110,8 @@
   .experience__media-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    gap: 16px;
+    justify-content: center;
+    gap: 32px;
   }
 
   .experience__content {
