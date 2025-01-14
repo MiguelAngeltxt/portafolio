@@ -1,0 +1,28 @@
+.section--about-me {
+  background-color: #eaf2fd;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.section__title {
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25.83px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.section__text {
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.44px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
